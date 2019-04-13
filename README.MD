@@ -1,6 +1,6 @@
 ## VSoft.Halibut.Hosting
 
-This project addes support for [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting/).
+This project addes support for [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting/) to [Halibut](https://github.com/OctopusDeploy/Halibut).
 
 #### Usage
 
