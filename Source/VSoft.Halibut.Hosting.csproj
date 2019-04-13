@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Vincent Parrett</Authors>
+    <Company>VSoft Technologies Pty Ltd</Company>
+    <Description>Microsoft.Extensions.Hosting support for Halibut</Description>
+    <Copyright>VSoft Technologies Pty Ltd</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/VSoftTechnologies/Halibut.Hosting</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VSoftTechnologies/Halibut.Hosting.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Rpc Hosting</PackageTags>
+    <PackageReleaseNotes />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Halibut" Version="4.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
