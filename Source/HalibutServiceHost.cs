@@ -26,13 +26,6 @@ namespace VSoft.Halibut.Hosting
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            if (_options.Trust.Count > 0)
-            {
-                foreach (var item in _options.Trust)
-                {
-                    _trustProvider.Add(item);
-                }
-            }
 
             var certificate = new X509Certificate2(_options.CertificateFile);
             _runtime = new HalibutRuntime(_serviceFactory, certificate);
@@ -40,6 +33,14 @@ namespace VSoft.Halibut.Hosting
             _trustProvider.OnAdded = (s) => _runtime.Trust(s);
             _trustProvider.OnRemoved = (s) => _runtime.RemoveTrust(s);
             _trustProvider.OnTrustOnly = (list) => _runtime.TrustOnly(list);
+
+            if (_options.Trust.Count > 0)
+            {
+                foreach (var item in _options.Trust)
+                {
+                    _trustProvider.Add(item);
+                }
+            }
 
             switch (_options.Mode)
             {
