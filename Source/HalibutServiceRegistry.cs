@@ -31,7 +31,6 @@ namespace VSoft.Halibut.Hosting
             string name = type.Name;
             _lookup.Add(name, type);
             _services.AddScoped<TContract, TImplementation>();
-
         }
     }
 }
