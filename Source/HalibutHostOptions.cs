@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace VSoft.Halibut.Hosting
 {
     public class HalibutHostOptions
@@ -20,5 +21,7 @@ namespace VSoft.Halibut.Hosting
         public ProxyDetails ProxyDetails { get; set; }
 
         public List<string> Trust { get; private set; } = new List<string>();
+
+        public Func<string, string, UnauthorizedClientConnectResponse> OnUnauthorizedClientConnect { get; set; }
     }
 }

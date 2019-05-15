@@ -42,6 +42,8 @@ namespace VSoft.Halibut.Hosting
                 }
             }
 
+            _runtime.OnUnauthorizedClientConnect = _options.OnUnauthorizedClientConnect;
+
             switch (_options.Mode)
             {
                 case HalibutServerMode.Listening:
