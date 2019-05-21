@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace VSoft.Halibut.Hosting
+
+namespace VSoft.Extensions.Hosting.Halibut
 {
     public interface IServiceRegistry
     {

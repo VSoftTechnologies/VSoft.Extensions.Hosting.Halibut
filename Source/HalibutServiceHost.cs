@@ -2,13 +2,11 @@
 using Halibut.ServiceModel;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace VSoft.Halibut.Hosting
+namespace VSoft.Extensions.Hosting.Halibut
 {
     public class HalibutServiceHost : IHostedService
     {
@@ -29,10 +27,6 @@ namespace VSoft.Halibut.Hosting
 
             var certificate = new X509Certificate2(_options.CertificateFile);
             _runtime = new HalibutRuntime(_serviceFactory, certificate);
-
-            _trustProvider.OnAdded = (s) => _runtime.Trust(s);
-            _trustProvider.OnRemoved = (s) => _runtime.RemoveTrust(s);
-            _trustProvider.OnTrustOnly = (list) => _runtime.TrustOnly(list);
 
             if (_options.Trust.Count > 0)
             {

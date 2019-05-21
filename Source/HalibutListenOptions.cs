@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
+﻿using System.Net;
 
-namespace VSoft.Halibut.Hosting
+namespace VSoft.Extensions.Hosting.Halibut
 {
     public class HalibutListenOptions
     {

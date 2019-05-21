@@ -2,7 +2,7 @@
 using Halibut.ServiceModel;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace VSoft.Halibut.Hosting
+namespace VSoft.Extensions.Hosting.Halibut
 {
     //Uses the Host DI containerto resolve services
     internal class HalibutDIServiceFactory : IServiceFactory

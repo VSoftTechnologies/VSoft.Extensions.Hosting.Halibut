@@ -3,7 +3,7 @@ using Halibut.ServiceModel;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace VSoft.Halibut.Hosting
+namespace VSoft.Extensions.Hosting.Halibut
 {
     public static class HalibutHostingExtensions
     {
