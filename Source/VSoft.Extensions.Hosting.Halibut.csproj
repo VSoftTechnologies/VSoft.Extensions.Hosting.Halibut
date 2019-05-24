@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://github.com/VSoftTechnologies/Halibut.Hosting</PackageProjectUrl>
     <RepositoryUrl>https://github.com/VSoftTechnologies/Halibut.Hosting.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>Rpc Hosting</PackageTags>
+    <PackageTags>Rpc Halibut Hosting</PackageTags>
     <PackageReleaseNotes />
     <AssemblyVersion>1.0.0.6</AssemblyVersion>
     <FileVersion>1.0.0.6</FileVersion>
@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Halibut" Version="4.3.5" />
+    <PackageReference Include="Halibut" Version="4.3.6" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.2.0" />
   </ItemGroup>
 
