@@ -7,7 +7,7 @@
     <Description>Microsoft.Extensions.Hosting support for Halibut</Description>
     <Copyright>VSoft Technologies Pty Ltd</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageLicenseUrl>https://github.com/VSoftTechnologies/VSoft.Extensions.Hosting.Halibut/blob/master/License.txt</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/VSoftTechnologies/Halibut.Hosting</PackageProjectUrl>
     <RepositoryUrl>https://github.com/VSoftTechnologies/Halibut.Hosting.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -17,6 +17,7 @@
     <FileVersion>1.0.0.6</FileVersion>
     <Version>1.0.6</Version>
     <AssemblyName>VSoft.Extensions.Hosting.Halibut</AssemblyName>
+    <PackageId>VSoft.Extensions.Hosting.Halibut</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
