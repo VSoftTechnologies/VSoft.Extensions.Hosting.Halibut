@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Halibut.ServiceModel;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,6 +23,15 @@ namespace VSoft.Extensions.Hosting.Halibut
             var service = scope.ServiceProvider.GetRequiredService(serviceType); //throws if not found!
             return new Lease(scope, service);
         }
+
+        public IReadOnlyList<Type> RegisteredServiceTypes
+        {
+            get
+            {
+                return _serviceRegistry.RegisteredServiceTypes;
+            }
+        }
+
         #region Nested type: Lease
 
         class Lease : IServiceLease

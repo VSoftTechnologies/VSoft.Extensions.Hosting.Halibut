@@ -15,7 +15,9 @@ namespace VSoft.Extensions.Hosting.Halibut
             _services = services;
         }
 
-        public Type GetServiceType(string serviceName)
+        public IReadOnlyList<Type> RegisteredServiceTypes => new List<Type>(_lookup.Values);
+
+		public Type GetServiceType(string serviceName)
         {
             _lookup.TryGetValue(serviceName, out Type result);
             return result;
