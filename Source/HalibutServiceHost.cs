@@ -26,7 +26,10 @@ namespace VSoft.Extensions.Hosting.Halibut
 		{
 
 			var certificate = new X509Certificate2(_options.CertificateFile);
-			_runtime = new HalibutRuntime(_serviceFactory, certificate, _trustProvider);
+			_runtime = new HalibutRuntimeBuilder()
+				.WithServiceFactory(_serviceFactory)
+				.WithServerCertificate(certificate)
+				.WithTrustProvider(_trustProvider).Build();
 
 			if (_options.Trust.Count > 0)
 				foreach (var item in _options.Trust)
