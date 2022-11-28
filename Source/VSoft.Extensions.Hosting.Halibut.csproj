@@ -12,13 +12,15 @@
     <RepositoryUrl>https://github.com/VSoftTechnologies/Halibut.Hosting.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Rpc Halibut Hosting</PackageTags>
-    <PackageReleaseNotes />
+    <PackageReleaseNotes>Added TypeRegistry option to Host options</PackageReleaseNotes>
     <AssemblyVersion>1.0.7.0</AssemblyVersion>
     <FileVersion>1.0.7.0</FileVersion>
     <Version>1.0.7</Version>
     <AssemblyName>VSoft.Extensions.Hosting.Halibut</AssemblyName>
     <PackageId>VSoft.Extensions.Hosting.Halibut</PackageId>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <Title>VSoft.Extensions.Hosting.Halibut</Title>
+    <PackageReadmeFile>README.MD</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,6 +32,10 @@
     <None Include="..\License.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.MD">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 </Project>
